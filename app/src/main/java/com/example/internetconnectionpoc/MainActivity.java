@@ -25,6 +25,14 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        TextView SSIDTV = findViewById(R.id.SSIDTV);
+        TextView frequencyTV = findViewById(R.id.frequencyTV);
+        TextView securityTV = findViewById(R.id.securityTV);
+
+        SSIDTV.setText("");
+        frequencyTV.setText("");
+        securityTV.setText("");
+
         Button mainBTN = findViewById(R.id.mainBTN);
         mainBTN.setOnClickListener(view ->
         {
